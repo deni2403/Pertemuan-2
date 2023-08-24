@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AVG Counter</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="student-form">
+            <label for="inputName">Nama Mahasiswa:</label><br>
+            <input id="inputName" type="text"><br>
+            <label for="inputMatkul">Mata Kuliah:</label><br>
+            <input id="inputMatkul" type="text"><br>
+            <label for="grade">Grade</label><br>
+            <select name="grade" id="grade" form="student">
+                <option value="4">A</option>
+                <option value="3">B</option>
+                <option value="2">C</option>
+                <option value="1">D</option>
+            </select>
+            <br>
+            <button class="btn-result" type="submit">Hitung</button>
+            <button class="btn-reset" type="button">Reset</button>
+        </form>
+        <div class="result-container">
+            <table id="students-data">
+                <tr>
+                    <th>Nama</th>
+                    <th>Mata Kuliah</th>
+                    <th>Grade</th>
+                    <th>Nilai Rata-rata</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
